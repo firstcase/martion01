@@ -13,25 +13,32 @@ class ViewController: UIViewController {
     let questions = Questions()
     var number = 0
     var score = 0
+    var curruntAnswer:Bool?
     
     @IBOutlet weak var invisibleRadioButton: DLRadioButton!
     @IBOutlet weak var questionBox: UILabel!
     
     @IBAction func yes(_ sender: Any) {
-        if number ==  3 || number == 4 || number == 5 || number == 7 || number == 9 || number == 11 || number == 16 || number == 17  {
-            score = score + 1
-        }
-        number = number + 1
+        curruntAnswer = true
     }
     
     @IBAction func no(_ sender: Any) {
-        if number ==  0 || number == 1 || number == 2 || number == 6 || number == 8 || number == 10 || number == 12 || number == 13 || number == 14 || number == 15   {
-            score = score + 1
-        }
-        number = number + 1
+        curruntAnswer = false
     }
 
     @IBAction func nextButton(_ sender: Any) {
+        if curruntAnswer == true {
+            if number ==  3 || number == 4 || number == 5 || number == 7 || number == 9 || number == 11 || number == 16 || number == 17  {
+                score = score + 1
+            }
+        }
+        
+        if curruntAnswer == false {
+            if number ==  0 || number == 1 || number == 2 || number == 6 || number == 8 || number == 10 || number == 12 || number == 13 || number == 14 || number == 15   {
+                score = score + 1
+            }
+        }
+        number = number + 1
         if number == 18 {
             // 스코어 값이랑 화면을 넘겨줘
             guard let a = self.storyboard!.instantiateViewController(withIdentifier: "RVC" ) as? ResultViewController else {
