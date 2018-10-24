@@ -19,6 +19,7 @@
 		8754426821494C5500B53A46 /* radio_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8754426721494C5500B53A46 /* radio_on.png */; };
 		8754426A2149F4C600B53A46 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875442692149F4C600B53A46 /* Questions.swift */; };
 		8754426C215B9CE100B53A46 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8754426B215B9CE100B53A46 /* ResultViewController.swift */; };
+		87FC5D95217F614500B6A8B8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC5D94217F614500B6A8B8 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8754426721494C5500B53A46 /* radio_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_on.png; sourceTree = "<group>"; };
 		875442692149F4C600B53A46 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		8754426B215B9CE100B53A46 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		87FC5D94217F614500B6A8B8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				8754423B2149417100B53A46 /* LaunchScreen.storyboard */,
 				8754423E2149417100B53A46 /* Info.plist */,
 				87544260214946EB00B53A46 /* martion01-Bridging-Header.h */,
+				87FC5D94217F614500B6A8B8 /* TableViewController.swift */,
 			);
 			path = martion01;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8754426C215B9CE100B53A46 /* ResultViewController.swift in Sources */,
+				87FC5D95217F614500B6A8B8 /* TableViewController.swift in Sources */,
 				875442352149416F00B53A46 /* ViewController.swift in Sources */,
 				8754426A2149F4C600B53A46 /* Questions.swift in Sources */,
 				87544262214946EC00B53A46 /* DLRadioButton.m in Sources */,
