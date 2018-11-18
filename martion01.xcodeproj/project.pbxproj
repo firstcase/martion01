@@ -19,7 +19,9 @@
 		8754426821494C5500B53A46 /* radio_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8754426721494C5500B53A46 /* radio_on.png */; };
 		8754426A2149F4C600B53A46 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875442692149F4C600B53A46 /* Questions.swift */; };
 		8754426C215B9CE100B53A46 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8754426B215B9CE100B53A46 /* ResultViewController.swift */; };
+		87B37893219EFAC700B41D3A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B37892219EFAC700B41D3A /* Question.swift */; };
 		87FC5D95217F614500B6A8B8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC5D94217F614500B6A8B8 /* TableViewController.swift */; };
+		8FCB18975BC736B954791D78 /* Pods_martion01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DA366DFFCAC705E8FE47B1 /* Pods_martion01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DCCA58087E75FDF8944DA24 /* Pods-martion01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-martion01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-martion01/Pods-martion01.debug.xcconfig"; sourceTree = "<group>"; };
+		39AA316069CA0F36882AFC88 /* Pods-martion01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-martion01.release.xcconfig"; path = "Pods/Target Support Files/Pods-martion01/Pods-martion01.release.xcconfig"; sourceTree = "<group>"; };
 		8754422F2149416F00B53A46 /* martion01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = martion01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		875442322149416F00B53A46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		875442342149416F00B53A46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +64,9 @@
 		8754426721494C5500B53A46 /* radio_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_on.png; sourceTree = "<group>"; };
 		875442692149F4C600B53A46 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		8754426B215B9CE100B53A46 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		87B37892219EFAC700B41D3A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		87FC5D94217F614500B6A8B8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		95DA366DFFCAC705E8FE47B1 /* Pods_martion01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_martion01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCB18975BC736B954791D78 /* Pods_martion01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FFCC7FCE1C5E9CDD2D01A6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA58087E75FDF8944DA24 /* Pods-martion01.debug.xcconfig */,
+				39AA316069CA0F36882AFC88 /* Pods-martion01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E0E83CEDC6F83968C77F450 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95DA366DFFCAC705E8FE47B1 /* Pods_martion01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		875442262149416F00B53A46 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +119,8 @@
 				875442462149417100B53A46 /* martion01Tests */,
 				875442512149417100B53A46 /* martion01UITests */,
 				875442302149416F00B53A46 /* Products */,
+				3FFCC7FCE1C5E9CDD2D01A6D /* Pods */,
+				5E0E83CEDC6F83968C77F450 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +150,7 @@
 				8754423E2149417100B53A46 /* Info.plist */,
 				87544260214946EB00B53A46 /* martion01-Bridging-Header.h */,
 				87FC5D94217F614500B6A8B8 /* TableViewController.swift */,
+				87B37892219EFAC700B41D3A /* Question.swift */,
 			);
 			path = martion01;
 			sourceTree = "<group>";
@@ -162,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 875442572149417100B53A46 /* Build configuration list for PBXNativeTarget "martion01" */;
 			buildPhases = (
+				656132A12ED93DF9AF5F8BE2 /* [CP] Check Pods Manifest.lock */,
 				8754422B2149416F00B53A46 /* Sources */,
 				8754422C2149416F00B53A46 /* Frameworks */,
 				8754422D2149416F00B53A46 /* Resources */,
+				0D85E96AA5CCD126DD5D072B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +313,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D85E96AA5CCD126DD5D072B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-martion01/Pods-martion01-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-martion01/Pods-martion01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		656132A12ED93DF9AF5F8BE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-martion01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8754422B2149416F00B53A46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -294,6 +370,7 @@
 				875442352149416F00B53A46 /* ViewController.swift in Sources */,
 				8754426A2149F4C600B53A46 /* Questions.swift in Sources */,
 				87544262214946EC00B53A46 /* DLRadioButton.m in Sources */,
+				87B37893219EFAC700B41D3A /* Question.swift in Sources */,
 				875442332149416F00B53A46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,18 +542,21 @@
 		};
 		875442582149417100B53A46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCCA58087E75FDF8944DA24 /* Pods-martion01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AWQ66YG72P;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JQ2TRYAKQV;
 				INFOPLIST_FILE = martion01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eunmin.martion01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.inhouse.martian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Martian Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "martion01/martion01-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -486,18 +566,21 @@
 		};
 		875442592149417100B53A46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39AA316069CA0F36882AFC88 /* Pods-martion01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AWQ66YG72P;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JQ2TRYAKQV;
 				INFOPLIST_FILE = martion01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eunmin.martion01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.inhouse.martian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Martian Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "martion01/martion01-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

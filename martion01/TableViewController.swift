@@ -28,7 +28,7 @@ class TableViewController : UITableViewController  {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             let t01 = self.storyboard!.instantiateViewController(withIdentifier: "TestNo1")
-            self.present(t01, animated: true)
+            self.navigationController?.pushViewController(t01, animated: true)
         } else if indexPath.row == 1 {
             print("1")
         }
