@@ -38,11 +38,11 @@ class ResultViewController : UIViewController {
             "answers" : answers,
             "score" : score
         ]
-        Alamofire.request("http://10.0.1.7:3000/v1/answers",
-                          method: .post,
-                          parameters: param,
-                          encoding: JSONEncoding.default).responseString() { response in
-                            print(response.result.value!)
-        }
+//        Alamofire.request("http://10.0.1.7:3000/v1/answers",
+//                          method: .post,
+//                          parameters: param,
+//                          encoding: JSONEncoding.default).responseString() { response in
+//                            print(response.result.value!)
+//        }
     }
 }
